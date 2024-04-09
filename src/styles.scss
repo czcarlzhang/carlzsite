@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/fonts/fonts";
+
+:root {
+  --primary-color: #613dc1 !important;
+  --secondary-color: #858ae3 !important;
+  --header-body-color: #4e148c !important;
+  --navbar-footer-color: white !important;
+  --body-text-color: #97dffc !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "VT323";
+}
+
+body {
+  font-family: "VT323";
+  font-size: 12px;
+  color: var(--body-text-color);
+}
+
+.content-container {
+  margin-top: 15vh;
+  height: 70vh;
+  background-color: var(--header-body-color);
+  border-style: solid;
+}
+
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--primary-color);
+}
+
+/* Importing Bootstrap SCSS file. */
+// @import "bootstrap/scss/bootstrap";

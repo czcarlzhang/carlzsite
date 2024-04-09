@@ -1,0 +1,51 @@
+<div class="content-container">
+  <div class="d-flex flex-column min-vh-100 min-vw-100">
+    <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+      <div class="background-box container-fluid">
+        <h1>carl zhang</h1>
+        <div class="text-center">
+          <div class="navbar-container">
+            <nav class="navbar navbar-light bg-light flex-column">
+              <a
+                class="navbar-link"
+                routerLink="/about"
+                [@tetris]="aboutAnimation"
+                (@tetris.done)="onAnimationEnd($event)"
+                ><p>About</p></a
+              >
+
+              <a class="navbar-link" routerLink="/projects"
+                ><p
+                  [@tetris]="projectsAnimation"
+                  (@tetris.done)="onAnimationEnd($event)"
+                >
+                  Projects
+                </p></a
+              >
+
+              <a
+                class="navbar-link"
+                href="https://www.linkedin.com/in/carlzhangwat/"
+                target="_blank"
+                ><p
+                  [@tetris]="linkedinAnimation"
+                  (@tetris.done)="onAnimationEnd($event)"
+                >
+                  Linkedin
+                </p></a
+              >
+              <a class="navbar-link" href="/assets/resume.pdf" target="_blank"
+                ><p
+                  [@tetris]="resumeAnimation"
+                  (@tetris.done)="onAnimationEnd($event)"
+                >
+                  Resume
+                </p>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

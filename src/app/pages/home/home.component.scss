@@ -1,0 +1,45 @@
+h1 {
+  /* Extra small devices (phones, less than 768px) */
+  font-size: 100px;
+  text-align: center;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    font-size: 100px;
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    font-size: 100px;
+  }
+}
+
+.content-container {
+  margin-top: 15vh;
+  height: 70vh;
+  border-style: solid;
+}
+
+.h1 {
+  color: var(--body-text-color);
+}
+
+.a {
+  width: 100vw;
+}
+
+.p {
+  width: 100vw;
+}
+
+.navbar-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  padding: 10px;
+}
